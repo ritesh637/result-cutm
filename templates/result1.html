@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="image/png" href="/static/f.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+    <title>Result!</title>
+    <style>
+      body {
+    background: linear-gradient(270deg, #fbaf00, #ffd639, #ffa3af, #007cbe, #00af54);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: lineargrad 30s ease infinite;
+    -moz-animation: lineargrad 30s ease infinite;
+    animation: lineargrad 30s ease infinite;
+}
+      .bigbox{
+        background: linear-gradient(270deg, #fbaf00, #ffd639, #ffa3af, #007cbe, #00af54);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: lineargrad 30s ease infinite;
+    -moz-animation: lineargrad 30s ease infinite;
+    animation: lineargrad 30s ease infinite;
+      }
+     @-webkit-keyframes lineargrad {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes lineargrad {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes lineargrad {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron bigbox">
+        <h1 class="display-4 text-center ">Result! 📄</h1>
+        <hr>
+        <ul class="list-group list-group-horizontal-md ">
+          {% for n in inf %}
+          <li class="list-group-item list-group-item-success">{{n}}</li>
+          {% endfor %}
+        </ul>
+        
+      </div>
+      <div class="table-responsive-sm">
+        <table class="table .table-hover table-dark ">
+            <thead>
+              <tr>
+                <th scope="col">SUB.CODE</th>
+                <th scope="col">SUBJECT NAME</th>
+                <th scope="col">Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              {% for user in res %}
+              <tr>
+                <td>{{user[0]}}</td>
+                <td>{{user[1]}}</td>
+                <td>{{user[2]}}</td>
+              </tr>
+              {% endfor %}
+              <tr class="bg-success">
+                <td colspan=3 style="text-align: center;"><span style="color:red;"><b>CGPA: </b></span>{{cgpa}}</td>
+              </tr>
+              <tr class="bg-primary">
+                <td colspan=3 style="text-align: center;">
+                  Made With ❤ By <a hred="#">Ashish</a> 
+                  <br>
+                  To Follow Me Click Here 👉:
+                  &nbsp;&nbsp;
+                  <a href="https://www.instagram.com/ashish.exe/"><img src="/static/instagram.svg"></a>
+                  &nbsp;&nbsp;
+                  <a href="https://www.facebook.com/ashishkrfab"><img src="/static/facebook.svg"></a>
+                  &nbsp;&nbsp;
+                  <a href="https://github.com/ashish-devv"><img src="/static/github.svg"></a>
+                  &nbsp;&nbsp;
+                  <a href="https://www.linkedin.com/in/ashishkrshu/"><img src="/static/linkedin.svg"></a>
+                  
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      <div class="bg-success">
+        <b>Site Visit Counter 🏆✔😎:-</b>
+        <center>
+        <!-- hitwebcounter Code START -->
+        <a href="https://www.hitwebcounter.com" target="_blank">
+        <img src="https://hitwebcounter.com/counter/counter.php?page=7544645&style=0036&nbdigits=7&type=page&initCount=50" title="Web Counter" aalt="counter free"   border="0" >
+        </a>      
+          </center>
+      </div>
+      <div class="alert alert-danger" role="alert">
+          <b>If you find the Result Buggy 😢 ! Please Check Your Result In The Mail to Confirm !✔👌📧</b><hr>
+          Your CGPA May be different This is may vary!
+        </div>
+
+      
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

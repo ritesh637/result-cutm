@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="image/png" href="/static/f.png" />
+    <!-- Required meta tags -->
+    <meta name="title" content="Cutm Result " />
+    <meta
+      name="description"
+      content="CUTM Website To See Current Result Of the Semester. Made By Ashish"
+    />
+    <meta
+      name="keywords"
+      content="Result, CUTM, Centurion University, Odisha, result"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="author" content="RITESH" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+
+    <title>Result-RITESH</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins";
+      }
+      body {
+        background: linear-gradient(
+          270deg,
+          #fbaf00,
+          #ffd639,
+          #ffa3af,
+          #007cbe,
+          #00af54
+        );
+        background-size: 1000% 1000%;
+
+        -webkit-animation: lineargrad 30s ease infinite;
+        -moz-animation: lineargrad 30s ease infinite;
+        animation: lineargrad 30s ease infinite;
+      }
+      .jumbotron,
+      .card {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(5px);
+      }
+
+      @-webkit-keyframes lineargrad {
+        0% {
+          background-position: 0% 51%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 51%;
+        }
+      }
+      @-moz-keyframes lineargrad {
+        0% {
+          background-position: 0% 51%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 51%;
+        }
+      }
+      @keyframes lineargrad {
+        0% {
+          background-position: 0% 51%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 51%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-sm-6">
+          <img src="/static/pixeltrue-seo-1.svg" alt="" class="img-fluid" />
+        </div>
+        <div class="col-sm-6">
+          <div class="jumbotron text-center border border-dark">
+            <img
+              src="/static/i.png"
+              alt=""
+              style="
+                border-radius: 50%;
+                border: 5px black solid;
+                width: 100px;
+                height: 100px;
+              "
+            />
+            <h1 class="display-4">Result 📃</h1>
+          </div>
+          <div class="card text-center border border-dark">
+            <div class="card-body">
+              <h5 class="card-title">Registration No Here 👇</h5>
+              <form action="/result" method="POST">
+                <p class="card-text">
+                  <input
+                    type="number"
+                    name="regno"
+                    id=""
+                    class="form-control text-center border border-dark"
+                    placeholder="Enter Your Registration no Here.✔"
+                    required
+                  />
+                </p>
+                <button class="btn btn-primary" type="submit">
+                  See Your Result
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card text-center mt-2">
+        <div class="card-body">
+          <p class="card-text">
+            <!-- telegram icon -->
+
+            <span class="border border-dark badge badge-danger"
+              >New <i class="fab fa-telegram-plane fa-2x"></i
+            ></span>
+
+            CUTM Result Bot Also available on
+            <button
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Telegram <small class="">Click Here</small>
+            </button>
+            <br />
+            You Can See Your Result On Telegram bot by sending your Registration
+            no in the chat.
+          </p>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <b> You Can Also Search For "cutmresultbot" on Telegram </b>
+              <br />
+              <img
+                src="/static/qrcodeforbot.jpeg"
+                alt="qr code"
+                class="img-fluid"
+                width="300"
+                height="300"
+              />
+            </div>
+            <div class="modal-footer">
+              <a
+                href="https://t.me/cutmresultbot"
+                class="btn btn-success"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Link 🔗</a
+              >
+              <button type="button" class="btn btn-danger" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-2 border border-dark text-center bg-dark text-white">
+        <div class="card-body">
+          <p>
+            <a href="https://github.com/ashish-devv"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/ashishkrshu/"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+            <a href="https://www.facebook.com/ashishkrfab/"
+              ><i class="fab fa-facebook fa-2x"></i
+            ></a>
+            <a href="https://www.instagram.com/ashish.exe/"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
+          </p>
+          <p>
+            Made With 💖 By <a href="https://github.com/ashish-devv">Ashish</a>
+          </p>
+          <p>
+            <b>Site Visit Counter 🏆✔😎:-</b>
+            <a href="https://www.hitwebcounter.com" target="_blank">
+              <img
+                src="https://hitwebcounter.com/counter/counter.php?page=7544645&style=0036&nbdigits=7&type=page&initCount=50"
+                title="Web Counter"
+                aalt="counter free"
+                border="0"
+              />
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
